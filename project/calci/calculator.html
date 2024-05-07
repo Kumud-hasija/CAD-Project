@@ -8,39 +8,41 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" placeholder="0" id="inputbox">
+        <input type="text" placeholder="0" class="display">
+       
         <div>
-            <button>ac</button>
-            <button>del</button>
-            <button>%</button>
-            <button>/</button>
+            <button data-value="AC" class="operator">AC</button>
+            <button data-value="DEL" class="operator">DEL</button>
+            <button data-value="%" class="operator">%</button>
+            <button data-value="/" class="operator">/</button>
         </div>
         <div>
-            <button >7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button data-value="*" class="operator">*</button>
         </div>
         <div>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="-" class="operator">-</button>
         </div>
         <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="+" class="operator">+</button>
         </div>
         <div>
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="equalbtn">=</button>
+            <button data-value="00">00</button>
+            <button data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button class="equalbtn" data-value="=">=</button>
         </div>
     </div>
+
     
-    <script src="calculator.js"></script>
+    <script src="calci.js"></script>
 </body>
 </html>
