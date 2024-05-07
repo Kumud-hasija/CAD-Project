@@ -34,6 +34,7 @@ input::placeholder{
     color:#ffffff;
 }
 button{
+    font-size: large;
     border: none;
     width: 60px;
     height: 60px;
@@ -47,4 +48,23 @@ button{
 
 .equalbtn{
     background-color: rgb(255, 77, 0);
+}
+
+.display{
+    height: 80px;
+    width: 100%;
+    outline: coral;
+    border: 1px solid rgba(255, 77, 0, 0.5);
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: rgb(255, 77, 0);
+}
+button:active{
+    background-color: rgb(255, 77, 0);
+    opacity: 0.5;
+    transform: scale(0.99);
+}
+.operator{
+    color: aqua;
 }
