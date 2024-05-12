@@ -4,19 +4,35 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Index </title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">					 
+		<link rel="stylesheet" href="{{ url_for('static', filename='web.css') }}">		
+		 
 	</head>
-	<body></br></br></br></br></br>
-		<div align="center">
-		<div align="center" class="border">
-			<div class="header">
-				<h1 class="word">Index</h1>
-			</div></br></br></br>
-				<h1 class="bottom">
-					Hi {{session.username}}!!</br></br> Welcome to the index page...				 
-				</h1></br></br></br>
-				<a href="{{ url_for('logout') }}" class="btn">Logout</a>
-		</div>
+
+	<body>
+
+		<!-- <div class="leaves">
+			<div class="leaf"><img src="img1.png"></div>
+			<div class="leaf"><img src="img1.png"></div>
+			<div class="leaf"><img src="img1.png"></div>
+			<div class="leaf"><img src="img1.png"></div>
+			<br>
+			<div class="leaf"><img src="img2.png"></div>
+			<div class="leaf"><img src="img2.png"></div>
+			<div class="leaf"><img src="img2.png"></div>
+			<div class="leaf"><img src="img2.png"></div>
+		</div> -->
+
+		<div class="box">
+			<h2 style="text-align:center; font-family:'Poppins',sans-serif;color:#83617A;">Index</h2>
+				<br>
+				<h3>Hi {{session.username}}!!  </h3>
+				<br>
+				<h3> Welcome to the index page...</h3>
+
+				<div class="links">
+					<a href="{{ url_for('logout') }}" class="btn">Logout</a>
+				</div>
+				
 		</div>
 	</body>
 </html>
