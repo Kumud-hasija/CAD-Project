@@ -4,24 +4,26 @@
 	<head>
 		<meta charset="UTF-8">
 		<title> Login </title>
-		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">		 
+		<link rel="stylesheet" href="{{ url_for('static', filename='web.css') }}">		 
 	</head>
-	<body></br></br></br></br></br>
-		<div align="center">
-		<div align="center" class="border">
-			<div class="header">
-				<h1 class="word">Login</h1>
-			</div></br></br></br>
-			<h2 class="word">
-				<form action="{{ url_for('login') }}" method="post">
+	<body>
+
+		<div class="box">
+			<h2 style="text-align:center; font-family:'Poppins',sans-serif;color:#83617A;">Login</h2>
+			<form action="{{ url_for('login') }}" method="post">
 				<div class="msg">{{ msg }}</div>
-					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
-					<input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
-					<input type="submit" class="btn" value="Sign In"></br></br>
-				</form>
-			</h2>
-			<p class="bottom">Don't have an account? <a class="bottom" href="{{url_for('register')}}"> Sign Up here</a></p>
-		</div>
+				<label for="username"></label>
+				<input type="text" id="username" name="username" placeholder="Username" required>
+			    <label for="password"></label>
+				<input type="password" id="password" name="password" placeholder="Password" required>
+				<input style="font-family:'Poppins',sans-serif;  font-size:16px;  font-weight:600;" type="submit" value="Login">
+			</form>
+				
+			<div class="links">
+				<p>Don't have an account?</p>
+				<span class="spacer"></span>
+				<a class="link-hover" href="{{url_for('register')}}"> Sign Up </a>
+			</div>
 		</div>
 	</body>
 </html>
