@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematics Playground</title>
+    <link rel="stylesheet" href="xyz.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mathematics Playground</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#conversion">Conversion</a></li>
+                <li><a href="#formulas">Formulas</a></li>
+                <li><a href="#games">Games & Quizzes</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="calculator">
+            <h2>Calculator</h2>
+            <p>Perform math calculations with ease using our interactive calculator.</p>
+
+            <!--calci-->
+                <div class="calculator">
+                    <input type="text" id="display" readonly>
+                    <div class="buttons">
+                        <button onclick="clearDisplay()">C</button>
+                        <button onclick="appendToDisplay('(')">()</button>
+                        <button onclick="appendToDisplay(')')">)</button>
+                        <button onclick="appendToDisplay('sqrt(')">√</button>
+                        <button onclick="appendToDisplay('^')">^</button>
+                        <button onclick="appendToDisplay('7')">7</button>
+                        <button onclick="appendToDisplay('8')">8</button>
+                        <button onclick="appendToDisplay('9')">9</button>
+                        <button onclick="appendToDisplay('/')">÷</button>
+                        <button onclick="appendToDisplay('4')">4</button>
+                        <button onclick="appendToDisplay('5')">5</button>
+                        <button onclick="appendToDisplay('6')">6</button>
+                        <button onclick="appendToDisplay('*')">x</button>
+                        <button onclick="appendToDisplay('1')">1</button>
+                        <button onclick="appendToDisplay('2')">2</button>
+                        <button onclick="appendToDisplay('3')">3</button>
+                        <button onclick="appendToDisplay('-')">-</button>
+                        <button onclick="appendToDisplay('0')">0</button>
+                        <button onclick="appendToDisplay('.')">.</button>
+                        <button onclick="calculate()">=</button>
+                        <button onclick="appendToDisplay('+')">+</button>
+                    </div>
+                    <div class="mode-toggle">
+                        <label>Standard</label>
+                        <input type="checkbox" id="mode-toggle" onclick="toggleMode()">
+                        <label>Scientific</label>
+                    </div>
+                </div>
+
+            <!--dfjsfbjd-->
+        </section>
+        <section id="conversion">
+            <h2>Conversion</h2>
+            <p>Convert units effortlessly with our handy conversion tools.</p>
+            <!--coversion section-->
+         
+                <div class="conversion-section">
+                    <h2>Conversion Tools</h2>
+            
+                    <div class="conversion-type">
+                        <h3>Length</h3>
+                        <div class="illustration">
+                            <img src="length-illustration.gif" alt="Length Illustration">
+                        </div>
+                        <div class="input-fields">
+                            <label for="length-input">Length (in meters):</label>
+                            <input type="number" id="length-input">
+                            <label for="length-output">Length (converted):</label>
+                            <output id="length-output">0</output>
+                            <input type="range" id="length-slider" min="0" max="100" step="1">
+                        </div>
+                    </div>
+            
+                    <div class="conversion-type">
+                        <h3>Weight</h3>
+                        <div class="illustration">
+                            <img src="weight-illustration.gif" alt="Weight Illustration">
+                        </div>
+                        <div class="input-fields">
+                            <label for="weight-input">Weight (in kilograms):</label>
+                            <input type="number" id="weight-input">
+                            <label for="weight-output">Weight (converted):</label>
+                            <output id="weight-output">0</output>
+                            <input type="range" id="weight-slider" min="0" max="100" step="1">
+                        </div>
+                    </div>
+            
+                   <!--hehe-->
+    <div class="conversion-section">
+        <h2>Volume Conversion</h2>
+
+        <div class="conversion-type">
+            <h3>Volume</h3>
+            <div class="illustration">
+                <img src="volume-illustration.gif" alt="Volume Illustration">
+            </div>
+            <div class="input-fields">
+                <label for="volume-input">Volume (in liters):</label>
+                <input type="number" id="volume-input">
+                <label for="volume-output">Volume (converted):</label>
+                <output id="volume-output">0</output>
+                <input type="range" id="volume-slider" min="0" max="100" step="1">
+            </div>
+        </div>
+    </div>
+<!--hehe-->
+    <div class="conversion-section">
+        <h2>Temperature Conversion</h2>
+
+        <div class="conversion-type">
+            <h3>Temperature</h3>
+            <div class="illustration">
+                <img src="temperature-illustration.gif" alt="Temperature Illustration">
+            </div>
+            <div class="input-fields">
+                <label for="temperature-input">Temperature (in Celsius):</label>
+                <input type="number" id="temperature-input">
+                <label for="temperature-output">Temperature (converted):</label>
+                <output id="temperature-output">0</output>
+                <input type="range" id="temperature-slider" min="-100" max="100" step="1">
+            </div>
+        </div>
+
+    </div>
+
+
+            
+                </div>
+             
+            
+             
+        </section>
+         <!--coversion section-->
+    
+        <section id="formulas">
+            <h2>Formulas</h2>
+            <p>Explore a collection of important mathematical formulas.</p>
+                  <!--formula section-->
+         
+    <div class="formula-section">
+        <h2>Formula List</h2>
+
+        <div class="topic">
+            <h3 class="topic-header">Algebra</h3>
+            <div class="formula-list">
+                <button class="collapsible">Quadratic Formula</button>
+                <div class="content">
+                    <p>The quadratic formula is used to find the solutions to a quadratic equation of the form:</p>
+                    <p>ax^2 + bx + c = 0</p>
+                    <p>The formula is:</p>
+                    <p>x = (-b ± √(b^2 - 4ac)) / (2a)</p>
+                </div>
+
+                <button class="collapsible">Slope-Intercept Form</button>
+                <div class="content">
+                    <p>The slope-intercept form of a linear equation is:</p>
+                    <p>y = mx + b</p>
+                    <p>where 'm' is the slope and 'b' is the y-intercept.</p>
+                </div>
+
+                <!-- Add more algebra formulas -->
+            </div>
+        </div>
+
+        <div class="topic">
+            <h3 class="topic-header">Geometry</h3>
+            <div class="formula-list">
+                <button class="collapsible">Pythagorean Theorem</button>
+                <div class="content">
+                    <p>The Pythagorean theorem states that in a right triangle, the square of the length of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the lengths of the other two sides.</p>
+                    <p>a^2 + b^2 = c^2</p>
+                </div>
+
+                <button class="collapsible">Area of a Circle</button>
+                <div class="content">
+                    <p>The area of a circle with radius 'r' is:</p>
+                    <p>Area = πr^2</p>
+                </div>
+
+                <!-- Add more geometry formulas -->
+            </div>
+        </div>
+
+        <!-- Add more topics -->
+
+    </div>
+ 
+
+            <!--formula section-->
+        </section>
+        <section id="games">
+            <h2>Games & Quizzes</h2>
+            <p>Have fun while learning with our math-themed games and quizzes.</p>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>Access educational articles, tutorials, and videos to enhance your math skills.</p>
+        </section>
+        <section id="community">
+            <h2>Community</h2>
+            <p>Join our community forum to connect with other math enthusiasts.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mathematics Playground. All rights reserved.</p>
+    </footer>
+    <script src="xyz.js"></script>
+</body>
+</html>
